@@ -207,13 +207,62 @@
     </div>
   </section>
 
+  <!-- Section: Testimonial -->
+  <section class="section section-testimonial grey lighten-4">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <div class="carousel carousel-slider center">
+            <div class="carousel-item" href="#1">
+              <h2>Testimonial1</h2>
+              <p class="float-text">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim tempore
+                delectus incidunt, reprehenderit corrupti laboriosam maiores culpa animi molestiae nemo quaerat fuga
+                hic dolore libero ratione soluta ducimus rem? "
+                <em>- John Doe from Microsystems</em>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+            <div class="carousel-item" href="#2">
+              <h2>Testimonial2</h2>
+              <p class="float-text">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim tempore
+                delectus incidunt, reprehenderit corrupti laboriosam maiores culpa animi molestiae nemo quaerat fuga
+                hic dolore libero ratione soluta ducimus rem? "
+                <em>- Mike Smith from EdgeInk</em>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+            <div class="carousel-item" href="#2">
+              <h2>Testimonial3</h2>
+              <p class="float-text">" Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente enim tempore
+                delectus incidunt, reprehenderit corrupti laboriosam maiores culpa animi molestiae nemo quaerat fuga
+                hic dolore libero ratione soluta ducimus rem? "
+                <em>- Karen Williams from Techsoft</em>
+              </p>
+              <div class="carousel-fixed-item center hide-on-small-and-down">
+                <a href="#" class="btn grey">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!--Import jQuery before materialize.js-->
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
   <script>
     $(document).ready(function () {
-      // Custom JS & jQuery here
+      // Carousel
+      $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+      })
+      $('.button-collapse').sideNav();
 
     });
   </script>
