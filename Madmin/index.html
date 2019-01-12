@@ -140,7 +140,38 @@
         </div>
       </div>
       <div class="col s12 m6 l4">
-        <!-- Latest Comments -->
+        <ul class="collection with-header latest-comments">
+          <li class="collection-header">
+            <h5>Latest Comments</h5>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/person1.jpg" alt="" class="circle">
+            <span class="title">John Doe</span>
+            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia perferendis quos
+              quasi aliquid. Suscipit enim repellat eveniet, quibusdam dicta quas iusto vitae incidunt repudiandae? A
+              iusto obcaecati temporibus animi?</p>
+            <a href="#" class="approve green-text">Approve</a> |
+            <a href="#" class="deny red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/person2.jpg" alt="" class="circle">
+            <span class="title">Steve Smith</span>
+            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia perferendis quos
+              quasi aliquid. Suscipit enim repellat eveniet, quibusdam dicta quas iusto vitae incidunt repudiandae? A
+              iusto obcaecati temporibus animi?</p>
+            <a href="#" class="approve green-text">Approve</a> |
+            <a href="#" class="deny red-text">Deny</a>
+          </li>
+          <li class="collection-item avatar">
+            <img src="img/person3.jpg" alt="" class="circle">
+            <span class="title">Ellen Williams</span>
+            <p class="truncate">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit mollitia perferendis quos
+              quasi aliquid. Suscipit enim repellat eveniet, quibusdam dicta quas iusto vitae incidunt repudiandae? A
+              iusto obcaecati temporibus animi?</p>
+            <a href="#" class="approve green-text">Approve</a> |
+            <a href="#" class="deny red-text">Deny</a>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -191,8 +222,17 @@
               $(this).text(Math.ceil(now))
             }
           })
-        })
+        });
 
+        // Comments Approve | Deny
+        $('.approve').click(function (e) {
+          Materialize.toast('Comment Approved', 3000);
+          e.preventDefault();
+        });
+        $('.deny').click(function (e) {
+          Materialize.toast('Comment Denied', 3000);
+          e.preventDefault();
+        });
       });
     }, 1000);
   </script>
