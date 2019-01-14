@@ -16,7 +16,7 @@
 <body>
   <header class="main-header">
     <div class="primary-overlay">
-      <div class="nav-bar-fixed">
+      <div class="navbar-fixed">
         <nav class="transparent">
           <div class="container">
             <div class="nav-wrapper">
@@ -97,6 +97,12 @@
         offset: 0,
         callback: function (el) {
           Materialize.fadeInImage($(el));
+        }
+      }, {
+        selector: '.navbar-fixed',
+        offset: 1500,
+        callback: function () {
+          $('nav').removeClass('transparent').addClass('blue-grey darken-3');
         }
       }];
 
